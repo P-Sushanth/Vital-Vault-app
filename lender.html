@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lender | Vital Vault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-layout">
+
+    <div class="container">
+        <h1 class="title">Lender Portal</h1>
+
+        <form id="upload-form" class="form-container">
+            <input type="text" id="item-name" class="input-field" placeholder="Item Name" required>
+            <input type="number" id="item-price" class="input-field" placeholder="Price" required>
+            <input type="text" id="item-timing" class="input-field" placeholder="Timing" required>
+            <label for="item-image" class="file-label">Choose Image</label>
+            <input type="file" id="item-image" class="file-input" accept="image/*" required hidden>
+            <button type="submit" class="btn-primary">Upload Item</button>
+        </form>
+
+        <h2>Your Uploaded Items</h2>
+        <div id="uploaded-items"></div>
+
+        <button id="back-home" class="btn-secondary">Go to Home</button>
+    </div>
+
+    <script src="lender.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Vault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="home-page"> <!-- Home Page Styling -->
+
+    <div class="hero">
+        <div class="container">
+            <h1 class="title">Welcome to <span class="highlight">Vital Vault</span></h1>
+            <h2 id="welcome-message" class="subtitle"></h2>
+
+            <div id="role-selection" class="role-buttons" style="display: none;">
+                <button onclick="window.location.href='lender.html'" class="btn-primary">Lender</button>
+                <button onclick="window.location.href='renter.html'" class="btn-primary">Renter</button>
+            </div>
+
+            <button id="logout-btn" class="btn-danger" style="display: none;">Logout</button>
+            <button id="register-btn" class="btn-primary"
+                onclick="window.location.href='register.html'">Register</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
